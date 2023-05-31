@@ -2,7 +2,7 @@
 
 > 无限层级下拉菜单
 
-![image](https://github.com/oyps/apee-menu/assets/61752998/2ed4b03b-b15f-451e-912b-852f4b264565)
+<img src="https://github.com/oyps/apee-menu/assets/61752998/2ed4b03b-b15f-451e-912b-852f4b264565" style="max-width: 400px">
 
 
 ## 项目介绍
