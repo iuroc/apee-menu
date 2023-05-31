@@ -1,5 +1,9 @@
 {
   "scripts": {
     "build": "tsc && browserify js/index.js -o dist/bundle.js"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "typescript": "^5.0.4"
   }
 }
