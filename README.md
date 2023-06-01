@@ -66,35 +66,36 @@ export type Item = {
     import { ApeeMenu } from 'apee-menu'
     const { ApeeMenu } = require('apee-menu')
     ```
-4. 使用 `ApeeMenu`
 
-    ```ts
-    const apeeMenu = new ApeeMenu()
-    const menuConfig = [
-        {
-            text: '文件',
-            subMenu: [
-                { text: '新建文本文件' },
-                { text: '新建文件' },
-                { text: '新建窗口' },
-                {
-                    text: '打开文件',
-                    subMenu: [
-                        { text: '新建文本文件' },
-                        { text: '新建文件' },
-                        { text: '新建窗口' },
-                        { text: '打开文件' },
-                    ]
-                },
-            ]
-        }
-    ]
-    apeeMenu.setMenuConfig(menuConfig)
-    apeeMenu.setLocation(100, 50)
-    document.querySelector('button').onclick = function () {
-    apeeMenu.show()
+### 使用 `ApeeMenu`
+
+```ts
+const apeeMenu = new ApeeMenu()
+const menuConfig = [
+    {
+        text: '文件',
+        subMenu: [
+            { text: '新建文本文件' },
+            { text: '新建文件' },
+            { text: '新建窗口' },
+            {
+                text: '打开文件',
+                subMenu: [
+                    { text: '新建文本文件' },
+                    { text: '新建文件' },
+                    { text: '新建窗口' },
+                    { text: '打开文件' },
+                ]
+            },
+        ]
     }
-    ```
+]
+apeeMenu.setMenuConfig(menuConfig)
+apeeMenu.setLocation(100, 50)
+document.querySelector('button').onclick = function () {
+apeeMenu.show()
+}
+```
 
 ### 导入 CSS
     
