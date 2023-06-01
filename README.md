@@ -96,13 +96,13 @@ export type Item = {
     }
     ```
 
-## 导入 CSS
+### 导入 CSS
     
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apee-menu/css/style.css">
 ```
 
-## 创建 HTML 按钮
+### 创建 HTML 按钮
 
 请为需要设置点击展开菜单事件的元素增加 `apee-menu` 类。
 
