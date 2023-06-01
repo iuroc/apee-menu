@@ -1,4 +1,4 @@
-import { Menu } from '.'
+import { Menu } from '../../src'
 
 /** 菜单配置 */
 export const menuConfig: Menu = [

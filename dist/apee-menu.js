@@ -2,7 +2,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ApeeMenu = void 0;
-/** 多层级下拉菜单 */
+/**
+ * 多层级下拉菜单
+ * @author 欧阳鹏
+ * @version 1.0.2
+ */
 var ApeeMenu = /** @class */ (function () {
     function ApeeMenu(initOption) {
         var _this = this;
@@ -85,7 +89,7 @@ var ApeeMenu = /** @class */ (function () {
             // 需要被选中，则为其添加图片路径
             if (itemConfig.isChecked) {
                 var imgEle = checkEle;
-                imgEle.src = itemConfig.disabled ? 'img/check-disabled.svg' : 'img/check.svg';
+                imgEle.src = itemConfig.disabled ? 'https://cdn.jsdelivr.net/npm/apee-menu/img/check-disabled.svg' : 'https://cdn.jsdelivr.net/npm/apee-menu/img/check.svg';
             }
             /** 是否存在子菜单 */
             var hasSubMenu = Boolean(itemConfig.subMenu && itemConfig.subMenu.length > 0);
@@ -96,7 +100,7 @@ var ApeeMenu = /** @class */ (function () {
             // 存在子菜单，绑定鼠标悬停展开子菜单事件
             if (hasSubMenu) {
                 var imgEle = rightEle;
-                imgEle.src = itemConfig.disabled ? 'img/right-disabled.svg' : 'img/right.svg';
+                imgEle.src = itemConfig.disabled ? 'https://cdn.jsdelivr.net/npm/apee-menu/img/right-disabled.svg' : 'https://cdn.jsdelivr.net/npm/apee-menu/img/right.svg';
                 itemEle.addEventListener('mouseenter', function () {
                     if (itemEle.classList.contains('hover'))
                         return;

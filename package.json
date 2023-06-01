@@ -1,7 +1,7 @@
 {
     "scripts": {
         "build": "tsc && browserify js/index.js -o dist/apee-menu.js && uglifyjs dist/apee-menu.js --mangle --enclose -o dist/apee-menu.min.js",
-        "test": "tsc && browserify js/test.js -o dist/test.js"
+        "test": "cd demo && tsc src/index.ts && browserify src/index.js -o dist/bundle.js"
     },
     "devDependencies": {
         "browserify": "^17.0.0",
@@ -9,9 +9,10 @@
         "uglify-js": "^3.17.4"
     },
     "name": "apee-menu",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "> 无限层级下拉菜单",
     "main": "js/index.js",
+    "types": "src/index.ts",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/oyps/apee-menu.git"

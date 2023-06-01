@@ -158,9 +158,26 @@ exports.menuConfig = [
 
 },{}],2:[function(require,module,exports){
 "use strict";
+var _a;
+Object.defineProperty(exports, "__esModule", { value: true });
+var config_1 = require("./config");
+var src_1 = require("../../src");
+var apeeMenu = new src_1.ApeeMenu();
+apeeMenu.setMenuConfig(config_1.menuConfig);
+apeeMenu.setLocation(100, 50);
+(_a = document.querySelector('button')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
+    apeeMenu.show();
+});
+
+},{"../../src":3,"./config":1}],3:[function(require,module,exports){
+"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ApeeMenu = void 0;
-/** 多层级下拉菜单 */
+/**
+ * 多层级下拉菜单
+ * @author 欧阳鹏
+ * @version 1.0.2
+ */
 var ApeeMenu = /** @class */ (function () {
     function ApeeMenu(initOption) {
         var _this = this;
@@ -243,7 +260,7 @@ var ApeeMenu = /** @class */ (function () {
             // 需要被选中，则为其添加图片路径
             if (itemConfig.isChecked) {
                 var imgEle = checkEle;
-                imgEle.src = itemConfig.disabled ? 'img/check-disabled.svg' : 'img/check.svg';
+                imgEle.src = itemConfig.disabled ? 'https://cdn.jsdelivr.net/npm/apee-menu/img/check-disabled.svg' : 'https://cdn.jsdelivr.net/npm/apee-menu/img/check.svg';
             }
             /** 是否存在子菜单 */
             var hasSubMenu = Boolean(itemConfig.subMenu && itemConfig.subMenu.length > 0);
@@ -254,7 +271,7 @@ var ApeeMenu = /** @class */ (function () {
             // 存在子菜单，绑定鼠标悬停展开子菜单事件
             if (hasSubMenu) {
                 var imgEle = rightEle;
-                imgEle.src = itemConfig.disabled ? 'img/right-disabled.svg' : 'img/right.svg';
+                imgEle.src = itemConfig.disabled ? 'https://cdn.jsdelivr.net/npm/apee-menu/img/right-disabled.svg' : 'https://cdn.jsdelivr.net/npm/apee-menu/img/right.svg';
                 itemEle.addEventListener('mouseenter', function () {
                     if (itemEle.classList.contains('hover'))
                         return;
@@ -336,17 +353,4 @@ Object.defineProperty(window, 'ApeeMenu', {
     value: ApeeMenu
 });
 
-},{}],3:[function(require,module,exports){
-"use strict";
-var _a;
-Object.defineProperty(exports, "__esModule", { value: true });
-var config_1 = require("./config");
-var _1 = require(".");
-var apeeMenu = new _1.ApeeMenu();
-apeeMenu.setMenuConfig(config_1.menuConfig);
-apeeMenu.setLocation(100, 50);
-(_a = document.querySelector('button')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
-    apeeMenu.show();
-});
-
-},{".":2,"./config":1}]},{},[3]);
+},{}]},{},[2]);

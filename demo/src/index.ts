@@ -1,5 +1,5 @@
 import { menuConfig } from './config'
-import { ApeeMenu } from '.'
+import { ApeeMenu } from '../../src'
 
 const apeeMenu = new ApeeMenu()
 apeeMenu.setMenuConfig(menuConfig)
