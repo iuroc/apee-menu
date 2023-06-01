@@ -47,6 +47,7 @@ var ApeeMenu = /** @class */ (function () {
     };
     /** 显示根菜单 */
     ApeeMenu.prototype.show = function () {
+        this.remove();
         this.makeNewMenu(this.menuConfig, this.location.left, this.location.top, this.rootMenuId);
     };
     /**

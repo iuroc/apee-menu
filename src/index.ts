@@ -1,7 +1,7 @@
 /**
  * 多层级下拉菜单
  * @author 欧阳鹏
- * @version 1.0.5
+ * @version 1.0.6
  */
 export class ApeeMenu {
     /** 菜单配置 */
@@ -54,6 +54,7 @@ export class ApeeMenu {
     }
     /** 显示根菜单 */
     public show() {
+        this.remove()
         this.makeNewMenu(this.menuConfig, this.location.left, this.location.top, this.rootMenuId)
     }
     /**
