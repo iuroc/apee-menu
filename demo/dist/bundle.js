@@ -176,7 +176,7 @@ exports.ApeeMenu = void 0;
 /**
  * 多层级下拉菜单
  * @author 欧阳鹏
- * @version 1.0.2
+ * @version 1.0.4
  */
 var ApeeMenu = /** @class */ (function () {
     function ApeeMenu(initOption) {

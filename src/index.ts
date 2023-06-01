@@ -1,7 +1,7 @@
 /**
  * 多层级下拉菜单
  * @author 欧阳鹏
- * @version 1.0.3
+ * @version 1.0.4
  */
 export class ApeeMenu {
     /** 菜单配置 */

@@ -9,7 +9,7 @@
         "uglify-js": "^3.17.4"
     },
     "name": "apee-menu",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "> 无限层级下拉菜单",
     "main": "js/index.js",
     "types": "src/index.ts",
