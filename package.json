@@ -1,9 +1,25 @@
 {
-  "scripts": {
-    "build": "tsc && browserify js/index.js -o dist/bundle.js"
-  },
-  "devDependencies": {
-    "browserify": "^17.0.0",
-    "typescript": "^5.0.4"
-  }
+    "scripts": {
+        "build": "tsc && browserify js/index.js -o dist/apee-menu.js && uglifyjs dist/apee-menu.js --mangle --enclose -o dist/apee-menu.min.js",
+        "test": "tsc && browserify js/test.js -o dist/test.js"
+    },
+    "devDependencies": {
+        "browserify": "^17.0.0",
+        "typescript": "^5.0.4",
+        "uglify-js": "^3.17.4"
+    },
+    "name": "apee-menu",
+    "version": "1.0.0",
+    "description": "> 无限层级下拉菜单",
+    "main": "js/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oyps/apee-menu.git"
+    },
+    "author": "欧阳鹏",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/oyps/apee-menu/issues"
+    },
+    "homepage": "https://github.com/oyps/apee-menu#readme"
 }

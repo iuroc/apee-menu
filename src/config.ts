@@ -1,4 +1,4 @@
-import { Menu, removeSubMenu } from './util'
+import { Menu } from '.'
 
 /** 菜单配置 */
 export const menuConfig: Menu = [
