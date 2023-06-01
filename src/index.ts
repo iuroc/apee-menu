@@ -90,7 +90,7 @@ export class ApeeMenu {
             // 需要被选中，则为其添加图片路径
             if (itemConfig.isChecked) {
                 const imgEle = checkEle as HTMLImageElement
-                imgEle.src = itemConfig.disabled ? 'img/check-disabled.svg' : 'img/check.svg'
+                imgEle.src = itemConfig.disabled ? 'https://cdn.jsdelivr.net/npm/apee-menu/img/check-disabled.svg' : 'https://cdn.jsdelivr.net/npm/apee-menu/img/check.svg'
             }
             /** 是否存在子菜单 */
             let hasSubMenu = Boolean(itemConfig.subMenu && itemConfig.subMenu.length > 0)
@@ -101,7 +101,7 @@ export class ApeeMenu {
             // 存在子菜单，绑定鼠标悬停展开子菜单事件
             if (hasSubMenu) {
                 const imgEle = rightEle as HTMLImageElement
-                imgEle.src = itemConfig.disabled ? 'img/right-disabled.svg' : 'img/right.svg'
+                imgEle.src = itemConfig.disabled ? 'https://cdn.jsdelivr.net/npm/apee-menu/img/right-disabled.svg' : 'https://cdn.jsdelivr.net/npm/apee-menu/img/right.svg'
                 itemEle.addEventListener('mouseenter', () => {
                     if (itemEle.classList.contains('hover')) return
                     const rect = itemEle.getBoundingClientRect()
