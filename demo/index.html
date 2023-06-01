@@ -6,12 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apee-menu/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apee-menu@1.0.4/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apee-menu@1.0.4/dist/apee-menu.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apee-menu@1.0.4/demo/dist/menuConfig.js"></script>
 </head>
 
 <body>
     <button class="apee-menu">点我展开菜单</button>
-    <script src="dist/bundle.js"></script>
+    <script>
+        const ele = document.getElementsByClassName('apee-menu')[0]
+        const apeeMenu = new ApeeMenu()
+        apeeMenu.setMenuConfig(menuConfig)
+        apeeMenu.setLocation(100, 50)
+        ele.addEventListener('click', () => {
+            apeeMenu.show()
+        })
+    </script>
 </body>
 
 </html>
